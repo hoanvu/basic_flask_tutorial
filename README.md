@@ -1,4 +1,8 @@
 # Xây dựng "Hệ thống theo dõi Server" bằng Flask
+### Mục lục
+1. <a href="https://github.com/hoanvu/basic_flask_tutorial#mở-đầu">Giới thiệu</a>
+2. Cài đặt và chuẩn bị môi trường
+
 ### Mở đầu
 Ban đầu mình định viết một bài tutorial theo hướng hàn lâm, tức là chỉ đơn thuần giải thích các lí thuyết của Flask và lấy một ví dụ nhàm chán nào đó để cho người đọc dễ hiểu lí thuyết đó. Tên của bài viết ban đầu mình đặt là "Giới thiệu cơ bản về Flask". Nhưng sau đó lại cảm thấy nếu làm thế thì lại đang đi vào lối mòn của trường lớp, nên đã quyết định viết một bài giới thiệu về Flask bằng cách hướng dẫn xây dựng một Hệ thống theo dõi Server đơn giản sử dụng web framework này. 
  
@@ -14,7 +18,7 @@ Flask là một microframework của Python, rất thích hợp với những ng
 ### Giới thiệu "Hệ thống theo dõi server"
 Do mình sẽ dùng project này để mô tả và giải thích các lí thuyết của Flask, và qua đó kết hợp để xây dựng một web app hoàn chỉnh, việc giới thiệu sơ qua về project sẽ giúp bạn có một cái nhìn tổng quan về những gì chúng ta sẽ tìm hiểu và những gì Flask có thể làm được.
 
-> <strong>Lưu ý:</strong> do tutorial này chỉ nói về Flask, nên mình sẽ chỉ giải thích những gì liên quan tới Flask. Những phần không liên quan như: làm thế nào để check trạng thái server hay cách refresh page để cập nhật trạng thái server sẽ không được đề cập đến.
+> <strong>Lưu ý:</strong> do tutorial này chỉ nói về Flask, nên mình sẽ chỉ giải thích những gì liên quan tới Flask. Những phần không liên quan như: làm thế nào để check trạng thái server hay cách refresh page để cập nhật trạng thái server sẽ không được đề cập đến. Source code liên quan tới các phần đó các bạn có thể xem ở link phía trên mục Mở đầu.
 
 - <strong>Mục đích:</strong> Hệ thống này sẽ check một danh sách các server có trên hệ thống 5 giây một lần và hiển thị trạng thái tương ứng (Online hay Offline)
 - <strong>Thành phần:</strong> Ngoài Flask, chúng ta sẽ sử dụng các framework & thư viện sau:
@@ -27,10 +31,11 @@ Do mình sẽ dùng project này để mô tả và giải thích các lí thuy�
 	+ Thêm user quản trị (*)
 	+ Xóa server đang theo dõi khỏi hệ thống (*)
 	+ Xóa user (*)
+	+ Gửi email khi phát hiện server down
 
 > (*): những tính năng chỉ available khi user đã đăng nhập
 
-- <strong>Cấu trúc cây thư mục của project</strong>: thường thì cấu trúc thư mục của dự án sẽ khác phụ thuộc vào thói quen của mỗi developer nên sẽ không có một cấu trúc chuẩn nào. Tuy nhiên, trong Flask sẽ có 2 thư mục bắt buộc bạn phải có là <em>templates</em> và <em>static</em>. Lí do tại sao mình sẽ giải thích trong các phần tới. Dưới đây là cấu trúc thư mục mà mình dùng để viết project này. Bạn không cần phải tạo tất cả các file này cùng một lúc ngay bây giờ, mình sẽ hướng dẫn bạn khi nào cần tạo và chức năng của mỗi file/folder là gì khi cần.
+- <strong>Cấu trúc cây thư mục của project</strong>: thường thì cấu trúc thư mục của project sẽ khác phụ thuộc vào thói quen của mỗi developer nên sẽ không có một cấu trúc chuẩn nào. Tuy nhiên, trong Flask sẽ có 2 thư mục bắt buộc bạn phải có là <em>templates</em> và <em>static</em>. Lí do tại sao mình sẽ giải thích trong các phần tới. Dưới đây là cấu trúc thư mục mà mình dùng để viết project này. Bạn không cần phải tạo tất cả các file này cùng một lúc ngay bây giờ, mình sẽ hướng dẫn bạn khi nào cần tạo và chức năng của mỗi file/folder là gì khi cần.
 
 ```
 server_monitoring\
@@ -40,6 +45,7 @@ server_monitoring\
 		main.js
 		style.css
 		bootstrap.min.css
+		jquery.min.js
 	templates\
 		layout.html
 		index.html
@@ -49,3 +55,6 @@ server_monitoring\
 	schema.sql
 	server.py
 ```
+Đây là một screenshot của project mà chúng ta sẽ viết trong tutorial này:
+
+<img src="https://lh3.googleusercontent.com/jEholXw_6GnVWd2hbG81UE_Wmxmod3eWQopflauI2Ho=w1160-h470-no">

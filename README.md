@@ -61,4 +61,4 @@ server_monitoring\
 
 <img src="https://lh3.googleusercontent.com/jEholXw_6GnVWd2hbG81UE_Wmxmod3eWQopflauI2Ho=w1160-h470-no">
 
-<a href="https://github.com/hoanvu/basic_flask_tutorial/blob/master/1.%20C%C3%A0i%20%C4%91%E1%BA%B7t%20v%C3%A0%20chu%E1%BA%A9n%20b%E1%BB%8B%20m%C3%B4i%20tr%C6%B0%E1%BB%9Dng.md">Phần 2: Cài đặt và chuẩn bị môi trường</a>
+<a href="https://github.com/hoanvu/basic_flask_tutorial/blob/master/2.%20C%C3%A0i%20%C4%91%E1%BA%B7t%20v%C3%A0%20chu%E1%BA%A9n%20b%E1%BB%8B%20m%C3%B4i%20tr%C6%B0%E1%BB%9Dng.md">Phần 2: Cài đặt và chuẩn bị môi trường</a>

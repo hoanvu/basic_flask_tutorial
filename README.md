@@ -4,7 +4,7 @@
 2. <a href="https://github.com/hoanvu/basic_flask_tutorial/blob/master/2.%20C%C3%A0i%20%C4%91%E1%BA%B7t%20v%C3%A0%20chu%E1%BA%A9n%20b%E1%BB%8B%20m%C3%B4i%20tr%C6%B0%E1%BB%9Dng.md">Cài đặt và chuẩn bị môi trường</a>
 3. <a href="https://github.com/hoanvu/basic_flask_tutorial/blob/master/3.%20X%C3%A2y%20d%E1%BB%B1ng%20b%E1%BB%99%20khung%20cho%20m%E1%BB%99t%20%E1%BB%A9ng%20d%E1%BB%A5ng%20Flask.md">Xây dựng bộ khung cho một ứng dụng Flask</a>
 4. <a href="https://github.com/hoanvu/basic_flask_tutorial/blob/master/4.%20Template%20v%C3%A0%20Database.md">Template và Database</a>
-5. <a href="https://github.com/hoanvu/basic_flask_tutorial/blob/master/5.%20X%C3%A2y%20d%E1%BB%B1ng%20c%C3%A1c%20t%C3%ADnh%20n%C4%83ng.md">Xây dựng các tính năng của hệ thống</a>
+5. <a href="https://github.com/hoanvu/basic_flask_tutorial/blob/master/5.%20X%C3%A2y%20d%E1%BB%B1ng%20c%C3%A1c%20t%C3%ADnh%20n%C4%83ng.md">Xây dựng các tính năng chính của hệ thống</a>
 
 ### Mở đầu
 Ban đầu mình định viết một bài tutorial theo hướng hàn lâm, tức là chỉ đơn thuần giải thích các lí thuyết của Flask và lấy một ví dụ nhàm chán nào đó để cho người đọc dễ hiểu lí thuyết đó. Tên của bài viết ban đầu mình đặt là "Giới thiệu cơ bản về Flask". Nhưng sau đó lại cảm thấy nếu làm thế thì lại đang đi vào lối mòn của trường lớp, nên đã quyết định viết một bài giới thiệu về Flask bằng cách hướng dẫn xây dựng một Hệ thống theo dõi Server đơn giản sử dụng web framework này. 

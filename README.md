@@ -9,7 +9,7 @@
 ### Mở đầu
 Ban đầu mình định viết một bài tutorial theo hướng hàn lâm, tức là chỉ đơn thuần giải thích các lí thuyết của Flask và lấy một ví dụ nhàm chán nào đó để cho người đọc dễ hiểu lí thuyết đó. Tên của bài viết ban đầu mình đặt là "Giới thiệu cơ bản về Flask". Nhưng sau đó lại cảm thấy nếu làm thế thì lại đang đi vào lối mòn của trường lớp, nên đã quyết định viết một bài giới thiệu về Flask bằng cách hướng dẫn xây dựng một Hệ thống theo dõi Server đơn giản sử dụng web framework này. 
  
-Hệ thống theo dõi Server này thực ra là một mini project mình được giao để làm gần đây, và mình nghĩ việc viết lại những gì mình đã học và làm là cách tốt nhất để hệ thống hóa kiến thức của bản thân cũng như giúp đỡ những bạn mới tìm hiểu có thể bắt đầu một cách nhanh nhất. Các bạn có thể <a href="https://github.com/hoanvu/python_projects/tree/master/web/server_monitoring" target="_blank">truy cập source code của project này tại đây</a>.
+Hệ thống theo dõi Server này thực ra là một mini project mình được giao để làm gần đây, và mình nghĩ việc viết lại những gì mình đã học và làm là cách tốt nhất để hệ thống hóa kiến thức của bản thân cũng như giúp đỡ những bạn mới tìm hiểu có thể bắt đầu một cách nhanh nhất. Các bạn có thể <a href="https://github.com/hoanvu/server_monitoring/tree/master/use_flask" target="_blank">truy cập source code của project này tại đây</a>.
 
 > <strong>Lưu ý:</strong> Do kiến thức của mình vẫn còn rất hạn hẹp nên không thể tránh khỏi những lỗi và thiếu sót. Nếu bạn đọc và tìm được lỗi nào đó thì rất mong bạn có thể Fork project này và contribute vào đó. Tất cả đóng góp đều rất được welcome và tôn trọng.
 
